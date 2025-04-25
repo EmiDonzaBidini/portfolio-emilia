@@ -3,6 +3,8 @@ const settings = {
   isSplash: true,
 };
 
+
+
 // SEO Related settings
 const seo = {
   title: "Emilia Donza Bidini's Portfolio",
@@ -26,7 +28,17 @@ const greeting = {
   githubProfile: "https://github.com/EmiDonzaBidini",
 };
 
-const socialMediaLinks = [
+const aboutMe = {
+  title: "Sobre mí",
+  description: `
+  Profesional en Administración y Marketing con experiencia en estrategia comercial, expansión internacional y liderazgo de equipos. Especialista en optimización de procesos, gestión de ventas y análisis financiero para impulsar el crecimiento sostenible. Experiencia en industrias como Oil & Gas, Finanzas y Retail. Manejo de herramientas digitales y tecnología aplicada a negocios. Adaptable, resolutiva y con visión estratégica para integrar soluciones tecnológicas a los desafíos empresariales.
+  Nací en Carlos Casares, una ciudad del interior de la Provincia de Buenos Aires, Argentina, a 314 km de la Ciudad Autónoma de Buenos Aires. A los 17 años hice las valijas y me vine a Capital a estudiar. Empecé Ingeniería en Sistemas, pero rápidamente entendí que ese camino no alineaba con el futuro que quería construir. Ahí fue cuando descubrí las Ciencias Económicas… y sí, fue amor profesional a primera vista.
+  Aunque ya venía con una base del bachiller en Ciencias Económicas del Colegio Nacional, decidí combinar dos de mis grandes pasiones: el deporte y la gestión. Así fue como estudié las Licenciaturas en Marketing Deportivo y en Administración del Deporte en el Instituto Universitario River Plate.
+  Al mismo tiempo, también cursé un año completo de la Tecnicatura en Periodismo Deportivo, aprobando toda la parte editorial y de escritura —un área que siempre me apasionó— pero el tiempo no me alcanzaba para todo. Mientras trabajaba de día, seguí adelante con las carreras principales de noche.
+  Soy una convencida de que el aprendizaje no ocupa lugar. Siempre estoy capacitándome, explorando nuevas herramientas, tecnologías y estrategias. Me encanta leer, escribir, y aunque de chica lo hacía con un enfoque más poético, hoy quiero recuperar ese hábito con una mirada profesional. Quiero ayudar a quienes lo necesiten desde mis conocimientos y experiencias, y generar sinergia con quienes compartan el deseo de crecer.`,
+};
+
+const socialMediaLinks = [ 
   {
     name: "EmiDonzaBidini",
     link: "https://github.com/EmiDonzaBidini",
@@ -42,10 +54,53 @@ const socialMediaLinks = [
   {
     name: "Gmail",
     link: "mailto:emidonza@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-  },
+  }
 ];
+
+const experience = {
+  title: "Experiencia Profesional",
+  subtitle: "Últimos cargos",
+  description: "Mi trayectoria combina estrategia comercial, análisis financiero y liderazgo de proyectos con fuerte base tecnológica.",
+  header_image_path: "experience.svg",
+  sections: [
+    {
+      title: "Trabajos",
+      experiences: [
+        {
+          title: "Chief Marketing Officer (CMO) | Encargada Departamento Comercial",
+          company: "Desitec SA",
+          company_url: "https://www.desitec.com.ar/empresa/nosotros",
+          logo_path: "desitec_logo.png",
+          duration: "Oct 2021 - Actualidad",
+          location: "Buenos Aires, Argentina",
+          description:
+            "Lideré estrategias de expansión internacional, duplicando mercados. Logré un crecimiento de ventas del 331% (2023) y 129% (2024). Gestioné equipos y optimicé procesos de ventas e internacionalización en el sector Oil & Gas.",
+          color: "#006064"
+        },
+        {
+          title: "Analista Financiera",
+          company: "Finantech SAS",
+          duration: "Feb 2020 - Oct 2021",
+          location: "Buenos Aires, Argentina",
+          description:
+            "Evaluación de riesgos crediticios, análisis de datos financieros, manejo de BBDD (Excel, Power BI, SQL, SAP) y optimización de procesos de otorgamiento de préstamos.",
+          color: "#00796B"
+        },
+        {
+          title: "Secretaria - Recepcionista",
+          company: "Revista Nubilis SRL",
+          logo_path: "nubilis_logo.png",
+          duration: "Ene 2018 - May 2018",
+          location: "Buenos Aires, Argentina",
+          description:
+            "Pasantía laboral. Apoyo administrativo, organización de agenda ejecutiva, gestión de contenido y coordinación logística.",
+          color: "#5D4037"
+        }
+      ]
+    }
+  ]
+};
 
 const skills = {
   data: [
@@ -55,8 +110,8 @@ const skills = {
       skills: [
         "⚡ Desarrollo de estrategias comerciales enfocadas en expansión internacional y crecimiento sostenible",
         "⚡ Liderazgo de equipos multidisciplinarios y optimización de procesos de ventas",
-        "⚡ Negociación con clientes y análisis de rentabilidad para toma de decisiones estratégicas",
-      ],
+        "⚡ Negociación con clientes y análisis de rentabilidad para toma de decisiones estratégicas"
+      ]
     },
     {
       title: "Herramientas de Negocio",
@@ -64,56 +119,36 @@ const skills = {
       skills: [
         "⚡ Manejo de Excel avanzado para análisis financiero y de datos",
         "⚡ Experiencia con CRMs como Salesforce y HubSpot",
-        "⚡ Visualización de datos y reportes con Power BI",
+        "⚡ Visualización de datos y reportes con Power BI"
       ],
       softwareSkills: [
         {
           skillName: "Excel Avanzado",
           fontAwesomeClassname: "logos:microsoft-excel",
-          style: { color: "#217346" },
+          style: { color: "#217346" }
         },
         {
           skillName: "CRM (Salesforce, HubSpot)",
           fontAwesomeClassname: "simple-icons:salesforce",
-          style: { color: "#00A1E0" },
+          style: { color: "#00A1E0" }
         },
-        {
-          skillName: "Power BI",
-          fontAwesomeClassname: "simple-icons:powerbi",
-          style: { color: "#F2C811" },
-        },
-      ],
+      ]
     },
     {
       title: "Análisis de Datos y Tecnología",
       fileName: "DataImg",
       skills: [
         "⚡ Interpretación de datos financieros y comerciales para generación de insights",
-        "⚡ Desarrollo de dashboards interactivos con Power BI",
-        "⚡ Testing QA y Data Science para toma de decisiones basadas en datos",
+        "⚡ Desarrollo de dashboards interactivos",
+        "⚡ Testing QA y Data Science para toma de decisiones basadas en datos"
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: { color: "#3776AB" },
-        },
-        {
-          skillName: "Power BI",
-          fontAwesomeClassname: "simple-icons:powerbi",
-          style: { color: "#F2C811" },
-        },
-        {
-          skillName: "Excel Avanzado",
-          fontAwesomeClassname: "logos:microsoft-excel",
-          style: { color: "#217346" },
-        },
-        {
           skillName: "Testing QA",
-          fontAwesomeClassname: "simple-icons:testcafe",
-          style: { color: "#009688" },
-        },
-      ],
+          fontAwesomeClassname: "simple-icons:selenium",
+          style: { color: "#009688" }
+        }
+      ]
     },
     {
       title: "Desarrollo Web Full Stack",
@@ -121,35 +156,35 @@ const skills = {
       skills: [
         "⚡ Desarrollo de sitios web responsivos con HTML, CSS y JavaScript",
         "⚡ Gestión de bases de datos MySQL",
-        "⚡ Conocimientos en desarrollo backend con fundamentos en Python",
+        "⚡ Conocimientos en desarrollo backend con fundamentos en Python"
       ],
       softwareSkills: [
         {
           skillName: "HTML5",
           fontAwesomeClassname: "simple-icons:html5",
-          style: { color: "#E34F26" },
+          style: { color: "#E34F26" }
         },
         {
           skillName: "CSS3",
           fontAwesomeClassname: "fa-css3",
-          style: { color: "#1572B6" },
+          style: { color: "#1572B6" }
         },
         {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
-          style: { color: "#F7DF1E" },
+          style: { color: "#F7DF1E" }
         },
         {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
-          style: { color: "#4479A1" },
+          style: { color: "#4479A1" }
         },
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
-          style: { color: "#3776AB" },
-        },
-      ],
+          style: { color: "#3776AB" }
+        }
+      ]
     },
     {
       title: "Especialización en Análisis de Datos y Big Data",
@@ -158,50 +193,40 @@ const skills = {
         "⚡ Formación académica avanzada en Big Data, Inteligencia Artificial y Gestión de Datos",
         "⚡ Manejo de herramientas como Python, Power BI, Google Data Studio y Carto",
         "⚡ Conocimientos sólidos en machine learning, bases de datos (SQL, NoSQL), estadística con R y análisis de datos",
-        "⚡ Aplicación de metodologías ágiles y gestión de proyectos en entornos tecnológicos",
+        "⚡ Aplicación de metodologías ágiles y gestión de proyectos en entornos tecnológicos"
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: { color: "#3776AB" },
-        },
-        {
-          skillName: "Power BI",
-          fontAwesomeClassname: "simple-icons:powerbi",
-          style: { color: "#F2C811" },
-        },
-        {
           skillName: "Google Data Studio",
           fontAwesomeClassname: "simple-icons:googledatastudio",
-          style: { color: "#4285F4" },
+          style: { color: "#4285F4" }
         },
         {
           skillName: "Carto",
           fontAwesomeClassname: "simple-icons:carto",
-          style: { color: "#000000" },
+          style: { color: "#000000" }
         },
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
-          style: { color: "#47A248" },
+          style: { color: "#47A248" }
         },
         {
           skillName: "Apache Hadoop",
           fontAwesomeClassname: "simple-icons:apachehadoop",
-          style: { color: "#66CCFF" },
+          style: { color: "#66CCFF" }
         },
         {
           skillName: "Apache Spark",
           fontAwesomeClassname: "simple-icons:apachespark",
-          style: { color: "#E25A1C" },
+          style: { color: "#E25A1C" }
         },
         {
           skillName: "R",
           fontAwesomeClassname: "simple-icons:r",
-          style: { color: "#276DC3" },
-        },
-      ],
+          style: { color: "#276DC3" }
+        }
+      ]
     },
     {
       title: "Diseño y Marketing Digital",
@@ -209,40 +234,39 @@ const skills = {
       skills: [
         "⚡ Diseño de piezas gráficas y audiovisuales para campañas digitales",
         "⚡ Creación de contenido atractivo para redes sociales y branding",
-        "⚡ Implementación de estrategias de marketing digital",
+        "⚡ Implementación de estrategias de marketing digital"
       ],
       softwareSkills: [
         {
           skillName: "Photoshop",
           fontAwesomeClassname: "simple-icons:adobephotoshop",
-          style: { color: "#31A8FF" },
+          style: { color: "#31A8FF" }
         },
         {
           skillName: "Illustrator",
           fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: { color: "#FF9A00" },
+          style: { color: "#FF9A00" }
         },
         {
           skillName: "Premiere Pro",
           fontAwesomeClassname: "simple-icons:adobepremierepro",
-          style: { color: "#9999FF" },
+          style: { color: "#9999FF" }
         },
         {
           skillName: "InDesign",
           fontAwesomeClassname: "simple-icons:adobeindesign",
-          style: { color: "#FF3366" },
-        },
-      ],
-    },
-  ],
+          style: { color: "#FF3366" }
+        }
+      ]
+    }
+  ]
 };
 
 // Education Page
 const degrees = {
   degrees: [
     {
-      title:
-        "Máster en Big Data y Business Intelligence - Máster en IA Empresarial",
+      title: "Máster en Big Data y Business Intelligence - Máster en IA Empresarial",
       subtitle: "Escuela de Negocios Europea de Barcelona",
       logo_path: "/eneb_logo.png",
       alt_name: "ENEB",
@@ -250,10 +274,9 @@ const degrees = {
       descriptions: [
         "⚡ Formación avanzada en Big Data, Inteligencia Artificial y Business Intelligence.",
         "⚡ Desarrollo de proyectos aplicando metodologías ágiles y herramientas como Python, Power BI y Google Data Studio.",
-        "⚡ Análisis e interpretación de datos para la toma de decisiones estratégicas empresariales.",
+        "⚡ Análisis e interpretación de datos para la toma de decisiones estratégicas empresariales."
       ],
-      website_link:
-        "https://eneb.es/programas-formativos/master/master-en-big-data-y-business-intelligence/",
+      websiteLink: "https://eneb.es/programas-formativos/master/master-en-big-data-y-business-intelligence/"
     },
     {
       title: "Licenciatura en Administración",
@@ -264,10 +287,9 @@ const degrees = {
       descriptions: [
         "⚡ Formación en gestión y administración de organizaciones deportivas.",
         "⚡ Desarrollo de habilidades para la planificación y dirección de entidades deportivas.",
-        "⚡ Enfoque en estrategias de marketing y financiamiento en el ámbito deportivo.",
+        "⚡ Enfoque en estrategias de marketing y financiamiento en el ámbito deportivo."
       ],
-      website_link:
-        "https://iuriverplate.edu.ar/courses/licenciatura-administracion-deporte",
+      websiteLink: "https://iuriverplate.edu.ar/courses/licenciatura-administracion-deporte"
     },
     {
       title: "Licenciatura en Marketing",
@@ -278,12 +300,11 @@ const degrees = {
       descriptions: [
         "⚡ Estudio de técnicas y estrategias de marketing aplicadas al deporte.",
         "⚡ Análisis de mercado y comportamiento del consumidor en el ámbito deportivo.",
-        "⚡ Diseño y ejecución de campañas publicitarias para organizaciones deportivas.",
+        "⚡ Diseño y ejecución de campañas publicitarias para organizaciones deportivas."
       ],
-      website_link:
-        "https://iuriverplate.edu.ar/courses/licenciatura-marketing-deportivo",
-    },
-  ],
+      website_link: "https://iuriverplate.edu.ar/courses/licenciatura-marketing-deportivo"
+    }
+  ]
 };
 
 const certifications = {
@@ -294,7 +315,7 @@ const certifications = {
       logo_path: "talentotech_logo.png",
       certificate_link: "#",
       alt_name: "Talento Tech",
-      color_code: "#005691",
+      color_code: "#005691"
     },
     {
       title: "Power BI",
@@ -302,7 +323,7 @@ const certifications = {
       logo_path: "powerbi_logo.png",
       certificate_link: "#",
       alt_name: "Microsoft",
-      color_code: "#F2C811",
+      color_code: "#F2C811"
     },
     {
       title: "Full Stack Web Development",
@@ -310,7 +331,7 @@ const certifications = {
       logo_path: "codoacodo_logo.png",
       certificate_link: "#",
       alt_name: "Codo a Codo",
-      color_code: "#009688",
+      color_code: "#009688"
     },
     {
       title: "Fundamentos de la Programación",
@@ -318,16 +339,15 @@ const certifications = {
       logo_path: "egg_logo.png",
       certificate_link: "#",
       alt_name: "Egg",
-      color_code: "#FFB300",
+      color_code: "#FFB300"
     },
     {
       title: "Adobe Creative Suite",
-      subtitle:
-        "- Photoshop, Illustrator, Lightroom, Premiere Pro, InDesign (Platzi)",
+      subtitle: "- Photoshop, Illustrator, Lightroom, Premiere Pro, InDesign (Platzi)",
       logo_path: "adobe_logo.png",
       certificate_link: "#",
       alt_name: "Platzi",
-      color_code: "#F44336",
+      color_code: "#F44336"
     },
     {
       title: "Marketing Digital",
@@ -335,7 +355,7 @@ const certifications = {
       logo_path: "platzi_logo.png",
       certificate_link: "#",
       alt_name: "Platzi",
-      color_code: "#04C35C",
+      color_code: "#04C35C"
     },
     {
       title: "Inglés Avanzado (B1/B2)",
@@ -343,40 +363,64 @@ const certifications = {
       logo_path: "english_logo.png",
       certificate_link: "#",
       alt_name: "Inglés",
-      color_code: "#304FFE",
+      color_code: "#304FFE"
+    }
+  ]
+};
+
+const services = {
+  title: "¿En qué puedo ayudarte?",
+  description: `
+  Cuento con experiencia liderando estrategias comerciales, optimizando procesos y conectando equipos con tecnología. 
+  Estoy abierta a colaboraciones, consultorías y nuevos desafíos en los que pueda aportar valor.`,
+  offerings: [
+    {
+      title: "Estrategia Comercial & Expansión",
+      description:
+        "Diseño e implementación de estrategias comerciales centradas en crecimiento, rentabilidad y expansión internacional.",
     },
+    {
+      title: "Análisis de Datos & Visualización",
+      description:
+        "Creación de dashboards interactivos en Power BI, análisis de rentabilidad y modelos de toma de decisiones basados en datos.",
+    },
+    {
+      title: "Marketing Digital & Automatización",
+      description:
+        "Planificación e implementación de campañas digitales. Automatización de flujos con herramientas como Meta Ads, Mailchimp y CRM.",
+    },
+    {
+      title: "Diseño y Branding Digital",
+      description:
+        "Diseño de contenido visual profesional para marcas, redes sociales y presentaciones de impacto (Photoshop, Illustrator, Canva).",
+    },
+    {
+      title: "Consultoría para pymes & emprendedores",
+      description:
+        "Te ayudo a ordenar tus procesos comerciales y digitales para que puedas escalar, vender más y profesionalizar tu marca.",
+    }
   ],
+  contactPrompt: "¿Tenés un proyecto o idea? Escribime, respondé en menos de 24hs.",
 };
 
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
-    description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+    profile_image_path: "blanco.png",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://blogs.ashutoshhathidara.com/",
-    avatar_image_path: "blogs_image.svg",
-  },
+
   addressSection: {
-    title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
-    country: "USA",
-    region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
+    title: "¿Dónde encontrarme?",
+    subtitle: "Vivo en el Barrio de Palermo.",
+    locality: "Ciudad Autónoma de Buenos Aires",
+    country: "Argentina",  
+    postalCode: "1425",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
+
   },
   phoneSection: {
-    title: "",
-    subtitle: "",
+    title: "Contactame vía mail: emidonza@gmail.com",
   },
 };
 
