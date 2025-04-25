@@ -54,6 +54,7 @@ const socialMediaLinks = [
   {
     name: "Gmail",
     link: "mailto:emidonza@gmail.com",
+    fontAwesomeIcon: "fa-envelope", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   }
 ];
