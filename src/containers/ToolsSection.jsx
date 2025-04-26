@@ -1,11 +1,32 @@
 import React from "react";
 import {
-  SiPowerbi, SiMicrosoftexcel, SiGoogledatastudio, SiTableau,
-  SiTrello, SiNotion, SiAsana, SiSlack, SiGoogle,
-  SiHubspot, SiSalesforce, SiZoho,
-  SiGoogleads, SiFacebook, SiGoogleanalytics, SiMaildotru, SiHootsuite, SiUbersuggest, SiSemrush, SiOdoo,
-  SiCanva, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiAdobepremierepro,
-  SiScrumalliance, SiJirasoftware, SiSelenium, SiGoogleappsscript, SiPlaywright
+  SiMicrosoftoffice,
+  SiGoogledatastudio,
+  SiTableau,
+  SiTrello,
+  SiNotion,
+  SiAsana,
+  SiSlack,
+  SiGoogle,
+  SiHubspot,
+  SiSalesforce,
+  SiZohocrm,
+  SiGoogleads,
+  SiFacebook,
+  SiGoogleanalytics,
+  SiMailchimp,
+  SiHootsuite,
+  SiSemrush,
+  SiOdoo,
+  SiCanva,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobeindesign,
+  SiAdobepremierepro,
+  SiTestinglibrary,
+  SiSelenium,
+  SiJira,
+  SiGithub
 } from "react-icons/si";
 
 const ToolCard = ({ name, Icon, color }) => (
@@ -21,8 +42,8 @@ const ToolCard = ({ name, Icon, color }) => (
 const ToolsSection = () => {
   const toolsByCategory = {
     "Análisis de Datos": [
-      { name: "Power BI", Icon: SiPowerbi, color: "#F2C811" },
-      { name: "Excel", Icon: SiMicrosoftexcel, color: "#217346" },
+      { name: "Power BI", color: "#F2C811" },
+      { name: "Excel", Icon: FaFileExcel, color: "#217346" },
       { name: "Google Data Studio", Icon: SiGoogledatastudio, color: "#4285F4" },
       { name: "Tableau", Icon: SiTableau, color: "#E97627" },
     ],
@@ -44,7 +65,7 @@ const ToolsSection = () => {
       { name: "Google Analytics", Icon: SiGoogleanalytics, color: "#F9AB00" },
       { name: "Mailchimp", Icon: SiMaildotru, color: "#FFE01B" },
       { name: "Hootsuite", Icon: SiHootsuite, color: "#000000" },
-      { name: "Ubersuggest", Icon: SiUbersuggest, color: "#F56A2B" },
+      { name: "Ubersuggest", color: "#F56A2B" },
       { name: "SEMrush", Icon: SiSemrush, color: "#FF642D" },
       { name: "Odoo", Icon: SiOdoo, color: "#875A7B" },
     ],
@@ -59,7 +80,7 @@ const ToolsSection = () => {
       { name: "Scrum", Icon: SiScrumalliance, color: "#F15A22" },
       { name: "Jira", Icon: SiJirasoftware, color: "#0052CC" },
       { name: "Selenium", Icon: SiSelenium, color: "#43B02A" },
-      { name: "Playwright", Icon: SiPlaywright, color: "#45BA73" },
+      { name: "Playwright", Icon: SiTestinglibrary, color: "#45BA73" },
       { name: "Google Apps Script", Icon: SiGoogleappsscript, color: "#4285F4" }
     ]
   };

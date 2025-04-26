@@ -431,12 +431,8 @@ export {
   greeting,
   socialMediaLinks,
   skills,
-  competitiveSites,
   degrees,
   certifications,
   experience,
-  projectsHeader,
-  publicationsHeader,
-  publications,
   contactPageData,
 };
