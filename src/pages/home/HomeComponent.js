@@ -1,29 +1,31 @@
-import React, { Component } from "react";
+import React from "react";
+import Experience from "../../containers/experience/Experience";
+import Education from "../../containers/education/Education";
+import AboutMe from "../../containers/about/AboutMe";
 import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
-import AboutMe from "../../containers/about/AboutMe";
 import Services from "../../containers/services/Services";
 import ToolsSection from "../../containers/ToolsSection";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
+import Educations from "../../containers/education/Education";
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
-        <Header theme={this.props.theme} />
-        <Greeting theme={this.props.theme} />
-        <AboutMe />
-        <Skills theme={this.props.theme} />
-        <Experience theme={this.props.theme} />
-        <Services />
-        <Education theme={this.props.theme} />
-        <Footer theme={this.props.theme} />
-        <TopButton theme={this.props.theme} />
-      </div>
-    );
-  }
-}
+const Home = ({ theme }) => {
+  return (
+    <div>
+      <Header theme={theme} />
+      <Greeting theme={theme} />
+      <AboutMe />
+      <Skills theme={theme} />
+      <Experience theme={theme} />
+      <Education theme={theme} />
+      <ToolsSection theme={theme} />
+      <Services />
+      <Footer theme={theme} />
+      <TopButton theme={theme} />
+    </div>
+  );
+};
 
 export default Home;

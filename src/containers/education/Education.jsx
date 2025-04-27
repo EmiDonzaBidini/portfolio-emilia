@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import "./Educations.css";
+import "./Education.css"; // Cambia también el nombre del CSS
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
-import { degrees } from "../../portfolio";
+import { degrees } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 
-class Educations extends Component {
+class Education extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div className="main" id="educations">
-        <div className="educations-header-div">
+      <div className="main" id="education">
+        <div className="education-header-div">
           <Fade bottom duration={2000} distance="20px">
-            <h1 className="educations-header" style={{ color: theme.text }}>
-              Degrees Received
+            <h1 className="education-header" style={{ color: theme.text }}>
+              Educación
             </h1>
           </Fade>
         </div>
-        <div className="educations-body-div">
+        <div className="education-body-div">
           {degrees.degrees.map((degree) => {
             return <DegreeCard degree={degree} theme={theme} />;
           })}
@@ -26,4 +26,4 @@ class Educations extends Component {
   }
 }
 
-export default Educations;
+export default Education;

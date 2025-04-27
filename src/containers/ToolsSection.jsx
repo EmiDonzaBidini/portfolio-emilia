@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  SiMicrosoftoffice,
-  SiGoogledatastudio,
   SiTableau,
   SiTrello,
   SiNotion,
@@ -10,11 +8,10 @@ import {
   SiGoogle,
   SiHubspot,
   SiSalesforce,
-  SiZohocrm,
   SiGoogleads,
   SiFacebook,
   SiGoogleanalytics,
-  SiMailchimp,
+  SiMaildotru,
   SiHootsuite,
   SiSemrush,
   SiOdoo,
@@ -25,9 +22,15 @@ import {
   SiAdobepremierepro,
   SiTestinglibrary,
   SiSelenium,
-  SiJira,
-  SiGithub
+  SiZoho,
+  SiGoogledatastudio,
+  SiScrumalliance,
+  SiJirasoftware,
+  SiGoogleappsscript
 } from "react-icons/si";
+
+import { RiFileExcel2Fill } from "react-icons/ri";
+
 
 const ToolCard = ({ name, Icon, color }) => (
   <div
@@ -43,7 +46,7 @@ const ToolsSection = () => {
   const toolsByCategory = {
     "Análisis de Datos": [
       { name: "Power BI", color: "#F2C811" },
-      { name: "Excel", Icon: FaFileExcel, color: "#217346" },
+      { name: "Excel", Icon: RiFileExcel2Fill, color: "#217346" },
       { name: "Google Data Studio", Icon: SiGoogledatastudio, color: "#4285F4" },
       { name: "Tableau", Icon: SiTableau, color: "#E97627" },
     ],
