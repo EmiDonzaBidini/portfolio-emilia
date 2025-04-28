@@ -14,15 +14,12 @@ function SeoHeader() {
     return null;
   }
 
-  let sameAs = [];
-  socialMediaLinks
+  let sameAs = socialMediaLinks
     .filter(
       (media) =>
         !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
     )
-    .forEach((media) => {
-      sameAs.push(media.link);
-    });
+    .map((media) => media.link);
 
   let mail = socialMediaLinks.find((media) => media.link.startsWith("mailto"))?.link?.substring("mailto:".length) ?? "";
 
