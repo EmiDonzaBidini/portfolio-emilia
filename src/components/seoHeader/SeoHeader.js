@@ -11,7 +11,7 @@ import {
 
 function SeoHeader() {
   if (!seo || !greeting) {
-    return null; // No rompas si seo o greeting no existen
+    return null;
   }
 
   let sameAs = [];
@@ -24,10 +24,7 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = (
-  socialMediaLinks.find((media) => media.link.startsWith("mailto"))
-    ?.link?.substring("mailto:".length)
-  ) ?? "";
+  let mail = socialMediaLinks.find((media) => media.link.startsWith("mailto"))?.link?.substring("mailto:".length) ?? "";
 
   let job = experience?.sections
     ?.find((section) => section.work)
