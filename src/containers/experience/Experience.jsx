@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ExperienceAccordion from "./experienceAccordion";
+import ExperienceAccordion from "../experienceAccordion/ExperienceAccordion";
 import { experience } from "../../portfolio";
 import "./Experience.css";
 import { Fade } from "react-reveal";
