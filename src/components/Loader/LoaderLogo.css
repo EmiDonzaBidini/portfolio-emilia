@@ -1,4 +1,35 @@
-.raw_logo {
-  height: 305;
-  width: 440;
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Animación suave de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
