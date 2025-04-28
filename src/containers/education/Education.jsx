@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Education.css"; // Cambia también el nombre del CSS
+import "./Education.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio.js";
 import { Fade } from "react-reveal";

@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutMe } from "../../portfolio";
+import { aboutMe } from "../../portfolio.js";
 
 function AboutMe() {
   return (

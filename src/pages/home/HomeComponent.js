@@ -9,7 +9,6 @@ import Services from "../../containers/services/Services";
 import ToolsSection from "../../containers/ToolsSection";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-import Educations from "../../containers/education/Education";
 
 const Home = ({ theme }) => {
   return (

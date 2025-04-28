@@ -1,6 +1,7 @@
 {
-  "short_name": "Emi Portfolio",
   "name": "Emilia Donza Bidini Portfolio",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "icons/android-chrome-192x192.png",
@@ -13,8 +14,7 @@
       "type": "image/png"
     }
   ],
+  "short_name": "Emi Donza Bidini",
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#000000"
 }
