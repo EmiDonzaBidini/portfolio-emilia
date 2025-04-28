@@ -11,7 +11,7 @@ const seo = {
   og: {
     title: "Emilia Donza Bidini Portfolio",
     type: "website",
-    url: "http://tu-sitio-web.com/", // Podés cambiar esto por tu dominio cuando lo tengas
+    url: "https://emidonzabidini.github.io/portfolio-emilia/", // Podés cambiar esto por tu dominio cuando lo tengas
   },
 };
 

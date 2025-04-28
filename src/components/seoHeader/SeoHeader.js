@@ -10,6 +10,10 @@ import {
 } from "../../portfolio.js";
 
 function SeoHeader() {
+  if (!seo || !greeting) {
+    return null; // No rompas si seo o greeting no existen
+  }
+
   let sameAs = [];
   socialMediaLinks
     .filter(
@@ -20,53 +24,57 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
-  let job = experience.sections
+  let mail =
+    socialMediaLinks
+      .find((media) => media.link.startsWith("mailto"))
+      ?.link?.substring("mailto:".length) ?? "";
+
+  let job = experience?.sections
     ?.find((section) => section.work)
     ?.experiences?.at(0);
 
   let credentials = [];
-  certifications.certifications.forEach((certification) => {
+  certifications?.certifications?.forEach((certification) => {
     credentials.push({
       "@context": "https://schema.org",
       "@type": "EducationalOccupationalCredential",
-      url: certification.certificate_link,
-      name: certification.title,
-      description: certification.subtitle,
+      url: certification?.certificate_link,
+      name: certification?.title,
+      description: certification?.subtitle,
     });
   });
+
   const data = {
     "@context": "https://schema.org/",
     "@type": "Person",
-    name: greeting.title,
+    name: greeting?.title,
     url: seo?.og?.url,
     email: mail,
-    telephone: contactPageData.phoneSection?.subtitle,
+    telephone: contactPageData?.phoneSection?.title ?? "",
     sameAs: sameAs,
-    jobTitle: job.title,
+    jobTitle: job?.title ?? "",
     worksFor: {
       "@type": "Organization",
-      name: job.company,
+      name: job?.company ?? "",
     },
     address: {
       "@type": "PostalAddress",
-      addressLocality: contactPageData.addressSection?.locality,
-      addressRegion: contactPageData.addressSection?.region,
-      addressCountry: contactPageData.addressSection?.country,
-      postalCode: contactPageData.addressSection?.postalCode,
-      streetAddress: contactPageData.addressSection?.streetAddress,
+      addressLocality: contactPageData?.addressSection?.locality ?? "",
+      addressRegion: contactPageData?.addressSection?.region ?? "",
+      addressCountry: contactPageData?.addressSection?.country ?? "",
+      postalCode: contactPageData?.addressSection?.postalCode ?? "",
+      streetAddress: contactPageData?.addressSection?.streetAddress ?? "",
     },
     hasCredential: credentials,
   };
+
   return (
     <Helmet>
-      <title>{seo?.title}</title>
-      <meta name="description" content={seo?.description} />
-      <meta property="og:title" content={seo?.og?.title} />
-      <meta property="og:type" content={seo?.og?.type} />
-      <meta property="og:url" content={seo?.og?.url} />
+      <title>{seo?.title ?? "Portfolio"}</title>
+      <meta name="description" content={seo?.description ?? "Portfolio"} />
+      <meta property="og:title" content={seo?.og?.title ?? "Portfolio"} />
+      <meta property="og:type" content={seo?.og?.type ?? "website"} />
+      <meta property="og:url" content={seo?.og?.url ?? "/"} />
       <script type="application/ld+json">{JSON.stringify(data)}</script>
     </Helmet>
   );
