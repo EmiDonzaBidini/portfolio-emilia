@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-emilia/static/css/main.0bf4fd52.chunk.css",
-    "main.js": "/portfolio-emilia/static/js/main.cfdd71a7.chunk.js",
-    "main.js.map": "/portfolio-emilia/static/js/main.cfdd71a7.chunk.js.map",
+    "main.js": "/portfolio-emilia/static/js/main.d9be8719.chunk.js",
+    "main.js.map": "/portfolio-emilia/static/js/main.d9be8719.chunk.js.map",
     "runtime-main.js": "/portfolio-emilia/static/js/runtime-main.ff9e0c90.js",
     "runtime-main.js.map": "/portfolio-emilia/static/js/runtime-main.ff9e0c90.js.map",
     "static/js/2.515672ed.chunk.js": "/portfolio-emilia/static/js/2.515672ed.chunk.js",
     "static/js/2.515672ed.chunk.js.map": "/portfolio-emilia/static/js/2.515672ed.chunk.js.map",
     "index.html": "/portfolio-emilia/index.html",
-    "precache-manifest.c403e9704f6ddb6f63f63ac3efd1d567.js": "/portfolio-emilia/precache-manifest.c403e9704f6ddb6f63f63ac3efd1d567.js",
+    "precache-manifest.8bfcd092f181c805fec27e4ebf3f0159.js": "/portfolio-emilia/precache-manifest.8bfcd092f181c805fec27e4ebf3f0159.js",
     "service-worker.js": "/portfolio-emilia/service-worker.js",
     "static/css/main.0bf4fd52.chunk.css.map": "/portfolio-emilia/static/css/main.0bf4fd52.chunk.css.map",
     "static/media/index.css": "/portfolio-emilia/static/media/Montserrat-Regular.ee653992.ttf",
@@ -57,6 +57,6 @@
     "static/js/runtime-main.ff9e0c90.js",
     "static/js/2.515672ed.chunk.js",
     "static/css/main.0bf4fd52.chunk.css",
-    "static/js/main.cfdd71a7.chunk.js"
+    "static/js/main.d9be8719.chunk.js"
   ]
 }
