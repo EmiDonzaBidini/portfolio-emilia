@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3f7a33396f2087d0e4244c1f4b2140d",
+    "revision": "b9bdd777de66bec1393fb171c32f058e",
     "url": "/portfolio-emilia/index.html"
   },
   {
-    "revision": "ef3c56b7cc86142c9194",
-    "url": "/portfolio-emilia/static/css/main.57d4f6bc.chunk.css"
+    "revision": "c56f0bd92069caa17c1b",
+    "url": "/portfolio-emilia/static/css/main.0f5a6b07.chunk.css"
   },
   {
     "revision": "da62a19e260ebbe8b04b",
     "url": "/portfolio-emilia/static/js/2.ddbd4ad0.chunk.js"
   },
   {
-    "revision": "ef3c56b7cc86142c9194",
-    "url": "/portfolio-emilia/static/js/main.6c20c7cc.chunk.js"
+    "revision": "c56f0bd92069caa17c1b",
+    "url": "/portfolio-emilia/static/js/main.a3e0387d.chunk.js"
   },
   {
     "revision": "2c2162e1af49bd84b6fa",
